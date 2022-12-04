@@ -4,7 +4,7 @@ const https = require("https");
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname +  "/index.html");
 
 });
 app.post("/", function (req, res) {
